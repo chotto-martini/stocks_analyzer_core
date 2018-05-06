@@ -2,13 +2,12 @@ name := """stocks_analyzer_core"""
 
 version := "1.0.0"
 
-lazy val core = (project in file(".")).enablePlugins(PlayEbean).
+lazy val core = (project in file(".")).enablePlugins(PlayEbean)
 
 scalaVersion := "2.11.7"
 
 libraryDependencies ++= Seq(
   javaJdbc,
-  javaEbean,
   cache,
   javaWs,
   "com.stocks_analyzer"       % "stocks_analyzer_commons_2.11"  % "1.0.0",

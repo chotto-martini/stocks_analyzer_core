@@ -7,7 +7,7 @@ lazy val core = (project in file(".")).enablePlugins(PlayEbean)
 scalaVersion := "2.11.7"
 
 libraryDependencies ++= Seq(
-  javaJdbc,
+  "com.typesafe.play"         % "play-java-jdbc_2.11"           % "2.4.0",
   cache,
   javaWs,
   "com.stocks_analyzer"       % "stocks_analyzer_commons_2.11"  % "1.0.0",

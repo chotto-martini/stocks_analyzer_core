@@ -1,0 +1,10 @@
+com.stocks_analyzer.core.components
+com.stocks_analyzer.core.components.db
+com.stocks_analyzer.core.components.db.dao
+com.stocks_analyzer.core.components.db.secure
+com.stocks_analyzer.core.components.db.secure.dao
+com.stocks_analyzer.core.components.google
+com.stocks_analyzer.core.definitions
+com.stocks_analyzer.core.models
+com.stocks_analyzer.core.models.ext
+com.stocks_analyzer.core.models.secure

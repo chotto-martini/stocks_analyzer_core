@@ -73,7 +73,7 @@ public class RequestUtilityComponent {
 			return null;
 		}
 
-		MultipartFormData form = request.body().asMultipartFormData();
+		MultipartFormData<Object> form = request.body().asMultipartFormData();
 		if (form == null
 				|| form.asFormUrlEncoded() == null
 				|| form.asFormUrlEncoded().get(key) == null
@@ -107,7 +107,7 @@ public class RequestUtilityComponent {
 			return null;
 		}
 
-		MultipartFormData form = request.body().asMultipartFormData();
+		MultipartFormData<Object> form = request.body().asMultipartFormData();
 		if (form == null
 				|| form.asFormUrlEncoded() == null
 				|| form.asFormUrlEncoded().get(key) == null) {
@@ -167,7 +167,7 @@ public class RequestUtilityComponent {
 			return BLANK;
 		}
 
-		MultipartFormData form = request.body().asMultipartFormData();
+		MultipartFormData<Object> form = request.body().asMultipartFormData();
 		if (form == null
 				|| form.asFormUrlEncoded() == null
 				|| form.asFormUrlEncoded().get(key) == null

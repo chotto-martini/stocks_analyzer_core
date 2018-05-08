@@ -5,6 +5,7 @@ import java.util.Map;
 
 import com.avaje.ebean.Ebean;
 import com.avaje.ebean.SqlUpdate;
+import com.stocks_analyzer.commons.util.FieldUtils;
 import com.stocks_analyzer.core.components.ModelUtilityComponent;
 import com.stocks_analyzer.core.models.AppModel;
 

@@ -3,6 +3,7 @@ package com.stocks_analyzer.core.components;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
 
@@ -236,7 +237,7 @@ public class AppLogger {
 	 * @since 1.0.0
 	 */
 	public static void putMDC(String key, String val) {
-		if (StringUtils.isEmptyWithTrim(key)) {
+		if (StringUtils.isEmpty(key)) {
 			return;
 		}
 		MDC.put(key, val);
@@ -250,7 +251,7 @@ public class AppLogger {
 	 * @since 1.0.0
 	 */
 	public static void removeMDC(String key) {
-		if (StringUtils.isEmptyWithTrim(key)) {
+		if (StringUtils.isEmpty(key)) {
 			return;
 		}
 		MDC.remove(key);

@@ -32,9 +32,7 @@ public class FinancesComponent {
 					.eq("delete_flg", false)
 					.eq("stock_code", stockCode)
 					.orderBy("year DESC, settlement_types_id DESC")
-					.findPagingList(limit)
-					.setFetchAhead(false)
-					.getPage(page - 1)
+					.findPagedList(page - 1, limit)
 					.getList();
 
 		return retList;

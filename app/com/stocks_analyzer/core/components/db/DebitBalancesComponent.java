@@ -34,9 +34,7 @@ public class DebitBalancesComponent {
 					.eq("delete_flg", false)
 					.eq("stock_code", stockCode)
 					.orderBy("release_date DESC, id DESC")
-					.findPagingList(limit)
-					.setFetchAhead(false)
-					.getPage(page - 1)
+					.findPagedList(page - 1, limit)
 					.getList();
 
 		return retList;

@@ -21,6 +21,7 @@ import com.google.api.services.calendar.CalendarScopes;
 import com.google.api.services.calendar.model.Event;
 import com.google.api.services.calendar.model.EventDateTime;
 import com.google.api.services.calendar.model.Events;
+import com.stocks_analyzer.commons.util.DateUtils;
 
 import play.Play;
 

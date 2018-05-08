@@ -25,7 +25,7 @@ public class AppSecureModel extends AppModel {
 	 */
 	@Override
 	public void save() {
-		super.save(EBEAN_SERVER_DB_SECURE);
+		super.save();
 	}
 
 	/**

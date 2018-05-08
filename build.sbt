@@ -2,8 +2,6 @@ name := """stocks_analyzer_core"""
 
 version := "1.0.0"
 
-lazy val core = (project in file(".")).enablePlugins(PlayEbean)
-
 scalaVersion := "2.11.7"
 
 libraryDependencies ++= Seq(
